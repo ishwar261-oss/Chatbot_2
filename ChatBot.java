@@ -5,11 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 import org.json.*;
 
-public class ChatBot { // fixed: added “class” keyword before ChatBot
-
-    //  SECURITY NOTE:
-    // Do NOT hardcode API keys in real projects.
-    // Instead, use environment variables for safety.
+public class ChatBot {
     private static final String API_KEY = System.getenv("OPENROUTER_API_KEY");
     private static final String API_URL = "https://openrouter.ai/api/v1/chat/completions";
     private static final String MODEL = "gpt-4o-mini";
@@ -138,5 +134,7 @@ public class ChatBot { // fixed: added “class” keyword before ChatBot
         }
     }
 }
+
+//Use:
 //javac -cp json-20240303.jar ChatBot.java
 //java -cp .;json-20240303.jar ChatBot
