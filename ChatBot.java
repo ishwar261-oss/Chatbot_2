@@ -6,7 +6,7 @@ import java.util.*;
 import org.json.*;
 
 public class ChatBot {
-    private static final String API_KEY = System.getenv("OPENROUTER_API_KEY");
+    private static final String API_KEY = System.getenv("OPENROUTER_API_KEY"); // Paste your actual key here (OPENROUTER_API_KEY)
     private static final String API_URL = "https://openrouter.ai/api/v1/chat/completions";
     private static final String MODEL = "gpt-4o-mini";
     private static final String HISTORY_FILE = "mohini_history.json";
